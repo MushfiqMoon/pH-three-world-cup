@@ -68,7 +68,6 @@ body {
     margin: 20px 0;
 }
 
-
 .banner-image-area {
     width: 50%;
     display: flex;
@@ -99,7 +98,7 @@ body {
     height: 300px;
     padding: 28px;
     margin-right: 25px;
-    width: 30%;
+    width: 25%;
     border-radius: 15px;
 }
 
@@ -127,7 +126,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
-    width: 70%;
+    width: 75%;
 }
 
 .card {
@@ -187,7 +186,6 @@ body {
 .load-more-area {
     display: none;
 }
-
 
 /* ==============
  Footer Area 
@@ -287,13 +285,26 @@ footer hr {
  Media Query  
 ============== */
 
+/* Small Monitor */
+@media screen and (max-width: 1205px) and (min-width: 993px) {
+    .cards {
+        grid-gap: 15px;
+    }
+
+    .nav-btn {
+        width: 100%;
+    }
+
+    .flag-area {
+        padding: 20px 5px;
+    }
+
+}
+
 /* Tablet Device */
-/* .banner,
-footer {
-    display: none;
-} */
 
 @media screen and (max-width: 992px) {
+
     .continer {
         max-width: 95%;
     }
@@ -321,6 +332,11 @@ footer {
         padding: 0;
         margin-right: 0;
         width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .nav-btn {
+        margin-bottom: 15px;
     }
 
     .cards {
@@ -353,6 +369,7 @@ footer {
 /* Mobile Device */
 
 @media screen and (max-width: 576px) {
+
     .banner {
         flex-direction: column;
     }
@@ -363,9 +380,15 @@ footer {
     }
 
     .banner-text-area {
-        padding: 30px;
+        padding: 30px 60px;
         text-align: center;
         align-items: center;
+    }
+
+    .banner-title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 33px;
     }
 
     .banner-description {
@@ -384,6 +407,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 15px;
     }
 
     .cards {
@@ -402,5 +426,9 @@ footer {
     .footer-middle ul {
         flex-direction: column;
     }
-}
 
+    .footer-middle li {
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
