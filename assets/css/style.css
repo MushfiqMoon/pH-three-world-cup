@@ -26,11 +26,19 @@ body {
     color: #fff;
     display: inline-block;
     text-decoration: none;
+    width: 160px;
+    text-align: center;
     transition: 0.3s ease;
 }
-
+.goal-btn i {
+    transition: 0.3s ease;
+}
 .goal-btn:hover {
     background-color: #1363DF;
+}
+
+.goal-btn:hover i {
+    padding-left: 10px;
 }
 
 /* ==============
@@ -41,8 +49,7 @@ body {
     background-color: #06283D;
     border-radius: 30px;
     display: flex;
-
-
+    margin-top: 50px;
 }
 
 .banner-text-area {
@@ -98,7 +105,7 @@ body {
     height: 300px;
     padding: 28px;
     margin-right: 25px;
-    width: 25%;
+    width: 320px;
     border-radius: 15px;
 }
 
@@ -372,6 +379,7 @@ footer hr {
 
     .banner {
         flex-direction: column;
+        margin-top: 15px;
     }
 
     .banner-text-area,
